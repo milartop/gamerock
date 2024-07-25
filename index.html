@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Gamerock</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240724141545">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap&_v=20240724141545" rel="stylesheet">
+	<!-- <title>Gamerock</title> -->
+
+
+
+	<!-- <meta charset="UTF-8"> -->
+
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<!-- <link rel="stylesheet" href="style.css?_v=20240724141545" type='text/css' rel="preload" as="style"> -->
+
+</head>
+
+<body>
+	<div class="wrapper__container wrapper">
+
+		<main class="page">
+			<div class="container">
+				<div class="titlegame">
+					<h1>"Камень - Ножницы - Бумага"</h1>
+				</div>
+
+				<div class="center">
+					<input type="checkbox" id="one">
+				</div>
+
+
+				<div class="descr">
+					<!--       <div class="descr__title">Описание</div> -->
+					<div class="descr__text button-left">
+						<p>ОПИСАНИЕ: Верхний ползунок слева.</p> При нажатии на радиокнопки - "Камень",
+						"Ножницы", "Бумага" картинка слева
+						меняется соответственно.<br> Картинка справа меняется в случайном порядке (рандомно).<br> Игра
+						длится до 5
+						очков.
+					</div>
+					<div class="descr__text button-right hide">
+						<p>ОПИСАНИЕ: Верхний ползунок справа.</p> При нажатии на красную кнопку внизу -
+						"НАЖАТЬ".<br> Картинка справа и слева меняются в случайном порядке (рандомно).<br> Игра длится
+						до 5
+						очков.
+					</div>
+				</div><!-- descr -->
+
+				<div class="blockimg">
+
+					<div class="blockimg__imgleft">
+						<picture><source srcset="img/paper.webp" type="image/webp"><img class="paper hide" src="img/paper.png" alt="paper" id="tab_3"></picture>
+						<picture><source srcset="img/rock.webp" type="image/webp"><img class="rock " src="img/rock.png" alt="rock" id="tab_1"></picture>
+						<picture><source srcset="img/scissors.webp" type="image/webp"><img class="scissors hide" src="img/scissors.png" alt="scissors" id="tab_2"></picture>
+						<div class="img-txtGame"> ИГРОК </div>
+					</div><!-- blockimg__imgleft -->
+
+					<div class="blockimg__imgright">
+
+						<picture><source srcset="img/paper.webp" type="image/webp"><img class="paper-right hide" src="img/paper.png" alt="paper"></picture>
+						<picture><source srcset="img/rock.webp" type="image/webp"><img class="rock-right hide" src="img/rock.png" alt="rock"></picture>
+						<picture><source srcset="img/scissors.webp" type="image/webp"><img class="scissors-right" src="img/scissors.png" alt="scissors"></picture>
+						<div class="img-txtPc"> КОМПЬЮТЕР </div>
+					</div><!-- blockimg__imgright -->
+
+
+				</div>
+
+				<div class="score">
+					<div class="score__left">0</div><span>:</span>
+					<div class="score__right">0</div>
+
+				</div>
+				<div class="winner-txt">ИГРА ДО 5 ОЧКОВ</div>
+
+
+
+
+				<div class="btnradio">
+					<div>
+						<label>
+							<input type="radio" class="option-input radio " name="example" data-tab="#tab_1" checked />
+							<p>Камень</p>
+						</label>
+						<label>
+							<input type="radio" class="option-input radio " name="example" data-tab="#tab_2" />
+							<p>Ножницы</p>
+						</label>
+						<label>
+							<input type="radio" class="option-input radio " name="example" data-tab="#tab_3" />
+							<p>Бумага</p>
+						</label>
+					</div>
+				</div> <!-- btnradio -->
+
+				<div class="btnbutton">
+
+					<button class="btnbutton__text hide"><span>Нажать </span></button>
+
+
+				</div><!-- container -->
+
+
+
+
+				<!-- <script src="my.js?_v=20240724141545"></script> -->
+
+		</main>
+
+	</div>
+
+	<script src="js/app.min.js?_v=20240724141545"></script>
+</body>
+
+</html>
